@@ -1,17 +1,16 @@
 #'@title complete
-#'  @description
-#' @param 'workdir' is a character vector of length 1 indicating
-#'  the location of the CSV files
-#'  @param 'colName' is a character vector of length 1 indicating
-#'    mean; either "sulfate" or "nitrate"
 #'
+#' @param workdir is a character vector of length 1 indicating
+#'  the location of the CSV files
+#'  @param monitorid is an integer vector indicating the monitor ID numbers
+## to be used
 #'return a data frame of the from:
 #'  id nobs
 #'  1  117
 #'  2  1041
 #'  where nobs is: number of complete cases
 #'  and id is: mointor id
-#' @example complete("specdata", 1)
+#' @examples  complete("specdata", 1)
 complete <- function(workdir, monitorId =1:332) {
 
   result <- data.frame(id=numeric(0), nobs=numeric(0))
