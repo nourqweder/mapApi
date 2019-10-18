@@ -14,6 +14,7 @@ pollutantmean <- function(workdir, colName, monitorid = 1:332) {
   ## Return the mean of the pollmean across all monitors list
   ## in the 'monitorid' vector (ignoring NA values)
   ## NOTE: Do not round the result
+  #' @export
   means <- c()
   for (i in monitorid) {
     path <- paste(getwd(),"/", workdir, "/", sprintf("%03d", i), ".csv", sep = "")
