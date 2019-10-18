@@ -1,2 +1,3 @@
 ^mapApi\.Rproj$
 ^\.Rproj\.user$
+^appveyor\.yml$
