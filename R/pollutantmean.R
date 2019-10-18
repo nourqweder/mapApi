@@ -1,5 +1,5 @@
-rm(list = ls())
-setwd("./mapApi")
+#rm(list = ls())
+#setwd("./mapApi")
 #pollutantmean("specdata", "sulfate", 1:1)
 pollutantmean <- function(workdir, colName, monitorid = 1:332) {
   ## 'workdir' is a character vector of length 1 indicating
